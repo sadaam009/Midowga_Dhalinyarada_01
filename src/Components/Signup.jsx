@@ -120,7 +120,7 @@ document.body.style.backgroundColor='#75E2E9'
           className="appearance-nonerounded w-[250px] py-3 px-4 border-2 border-gray-200
        outline-none  text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
         >
-          <option value="">Dooro Nuca Dhiiga</option>
+          <option value="">Dooro Nuuca Dhiiga</option>
           <option value="A+">A+</option>
           <option value="A-">A-</option>
           <option value="B+">B+</option>
