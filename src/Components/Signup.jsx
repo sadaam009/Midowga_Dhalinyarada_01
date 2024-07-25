@@ -31,7 +31,7 @@ document.body.style.backgroundColor='#75E2E9'
    
 
     <div className="lg:w-[50%] w-[100%]   lg:h-[600px] h-[860px] bg-white rounded-md my-[2rem]  ">
-    <img className=' lg:w-[20%] w-[60%] lg:absolute absolute  lg:left-[30rem] left-[5rem] flex justify-center ' src={logo} alt="" />
+    <img className=' lg:w-[20%] w-[60%] lg:absolute absolute  lg:left-[30rem]  flex justify-center ' src={logo} alt="" />
     <h1 className=' text-[2rem] text-center font-semibold lg:pt-[5rem] pt-[5rem]  '>Form 
         <span className=' text-blue-500'> Registration</span></h1>
         
