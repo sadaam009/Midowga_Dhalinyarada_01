@@ -27,22 +27,22 @@ document.body.style.backgroundColor='#75E2E9'
     }
   return (
    
-   <div className="flex justify-center mx-[3rem] mt-[1rem] my-[6rem]  relative">
+   <div className="flex lg:justify-center lg:mx-[3rem] lg:mt-[1rem] mt-[1rem] lg:my-[6rem] mx-[1rem]  relative">
    
 
-    <div className="w-[50%]   h-[100vh] bg-white rounded-md  ">
-    <img className=' w-[20%] absolute  left-[30rem] ' src={logo} alt="" />
-    <h1 className=' text-[2rem] text-center font-semibold pt-[5rem]  '>Form 
+    <div className="lg:w-[50%] w-[100%]   lg:h-[100vh] h-[115vh] bg-white rounded-md my-[2rem]  ">
+    <img className=' lg:w-[20%] w-[60%] lg:absolute absolute  lg:left-[30rem] left-[5rem] ' src={logo} alt="" />
+    <h1 className=' text-[2rem] text-center font-semibold lg:pt-[5rem] pt-[5rem]  '>Form 
         <span className=' text-blue-500'> Registration</span></h1>
         
-       <div className=" mt-[1rem] space-y-4 ">
+       <div className=" lg:mt-[1rem] mt-[2.5rem]  lg:space-y-4 space-y-2 ml-[2rem] lg:ml-0 ">
       
        
-       <div className="  ml-[2.3rem] flex items-center  space-x-2">
+       <div className=" space-y-2  lg:ml-[2.3rem] lg:flex flex-col lg:flex-row lg:items-center  lg:space-x-2">
 
        <div className="">
        <label className=' text-[1.1rem] font-semibold ' htmlFor="">Name</label><br />
-        <input className=' w-[250px] py-3 px-4 border-2 border-gray-200
+        <input className=' lg:w-[250px]  w-[300px] py-3 px-4 border-2 border-gray-200
          outline-none  ' type="text" 
          value={name} 
         //  id='name'
@@ -53,7 +53,7 @@ document.body.style.backgroundColor='#75E2E9'
 
        <div className="">
        <label className=' text-[1.1rem] font-semibold ' htmlFor="">Number</label><br />
-        <input className=' w-[250px] py-3 px-4 border-2 border-gray-200
+        <input className='lg:w-[250px]  w-[300px] py-3 px-4 border-2 border-gray-200
          outline-none  ' type="text" 
          value={number}
           placeholder='Soo Gali Lambarka'
@@ -62,11 +62,11 @@ document.body.style.backgroundColor='#75E2E9'
        </div>
         </div>
 
-        <div className=" ml-[2.3rem] flex items-center  space-x-2">
+        <div className=" space-y-2 lg:ml-[2.3rem] lg:flex lg:items-center  lg:space-x-2">
 
            <div className="">
            <label className=' text-[1.1rem] font-semibold ' htmlFor="">City</label><br />
-            <input className=' w-[250px] py-3 px-4 border-2 border-gray-200
+            <input className='lg:w-[250px]  w-[300px] py-3 px-4 border-2 border-gray-200
              outline-none  ' type="text" 
              value={city}
              name='city'
@@ -75,7 +75,7 @@ document.body.style.backgroundColor='#75E2E9'
                 
            </div>
 
-       <div className="">
+       <div className="ml-0">
          <label className=' text-[1.1rem] font-semibold ' htmlFor=""> Education Stage </label><br />
          <select
           id="education"
@@ -83,7 +83,7 @@ document.body.style.backgroundColor='#75E2E9'
           value={education}
           onChange={handleChange}
           required
-          className="appearance-nonerounded w-[250px] py-3 px-4 border-2 border-gray-200
+          className="appearance-nonerounded lg:w-[250px]  w-[300px] py-3 px-4 border-2 border-gray-200
        outline-none  text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
         >
           <option value="">Dooro Heerka Waxbarasho</option>
@@ -97,11 +97,11 @@ document.body.style.backgroundColor='#75E2E9'
           </div>
        </div>
 
-      <div className="  ml-[2.3rem] flex items-center  space-x-2">
+      <div className=" space-y-2  lg:ml-[2.3rem] lg:flex items-center  lg:space-x-2">
 
         <div className="">
         <label className=' text-[1.1rem] font-semibold ' htmlFor="">Job</label><br />
-        <input className=' w-[250px] py-3 px-4 border-2 border-gray-200
+        <input className=' lg:w-[250px]  w-[300px] py-3 px-4 border-2 border-gray-200
        outline-none  ' type="text" 
        value={job}
         placeholder='Soo Gali Darajada shaqadaada' 
@@ -109,7 +109,7 @@ document.body.style.backgroundColor='#75E2E9'
          onChange={handleChange} />
         </div>
 
-   <div className="">
+   <div className="ml-0">
      <label className=' text-[1.1rem] font-semibold ' htmlFor="">Bloodtype</label><br />
      <select
           id="bloodtype"
@@ -117,7 +117,7 @@ document.body.style.backgroundColor='#75E2E9'
           value={bloodtype}
           onChange={handleChange}
           required
-          className="appearance-nonerounded w-[250px] py-3 px-4 border-2 border-gray-200
+          className="appearance-nonerounded lg:w-[250px]  w-[300px] py-3 px-4 border-2 border-gray-200
        outline-none  text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
         >
           <option value="">Dooro Nuuca Dhiiga</option>
@@ -134,16 +134,16 @@ document.body.style.backgroundColor='#75E2E9'
      </div>
 
       
-        <div className=" space-y-3 ml-[2.3rem]">
+        <div className=" space-y-3 lg:ml-[2.3rem]">
         <label className=' text-[1.1rem] font-semibold ' htmlFor="">ID Card</label><br />
-        <input className=' w-[500px] py-3 px-4 border-2 border-gray-200
+        <input className=' lg:w-[500px] w-[300px]  py-3 px-4 border-2 border-gray-200
          outline-none  ' type="text" 
          value={aqoonsi} 
          name='aqoonsi'
          placeholder='Soo Gali Aqoonsi Lambarka'  onChange={handleChange} />
         </div>
         <button className=' py-2 px-5 bg-blue-500 text-white font-semibold
-         text-[1.2rem] rounded-md ml-[2.4rem] ' onClick={Register}>Submit Form</button>
+         text-[1.2rem] rounded-md lg:ml-[2.4rem] mt-4 ' onClick={Register}>Submit Form</button>
        </div>
 
        
