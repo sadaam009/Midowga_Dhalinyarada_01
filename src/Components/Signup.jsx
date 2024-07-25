@@ -27,7 +27,7 @@ document.body.style.backgroundColor='#75E2E9'
     }
   return (
    
-   <div className="flex lg:justify-center lg:mx-[3rem] lg:mt-[1rem] mt-[1rem] lg:my-[6rem] mx-[1rem]  relative">
+   <div className="flex lg:justify-center lg:mx-[3rem] lg:mt-[1rem] mt-[1rem] lg:my-[6rem]   relative">
    
 
     <div className="lg:w-[50%] w-[100%]   lg:h-[100vh] h-[115vh] bg-white rounded-md my-[2rem]  ">
