@@ -7,10 +7,10 @@ export default function Signup() {
         city:"",
         education:"",
         job:"",
-        bloodtype:"",
-        aqoonsi:""
+        bloodtype:""
+       
     })
-   const {name,number,city,education,job,bloodtype,aqoonsi}=data;
+   const {name,number,city,education,job,bloodtype}=data;
     useEffect(()=>{
 document.body.style.backgroundColor='#75E2E9'
     },[]) 
@@ -30,18 +30,19 @@ document.body.style.backgroundColor='#75E2E9'
    <div className="flex lg:justify-center lg:mx-[3rem] lg:mt-[1rem] mt-[1rem] lg:my-[6rem] mx-[0.8rem]  relative">
    
 
-    <div className="lg:w-[50%] w-[100%]   lg:h-[600px] h-[860px] bg-white rounded-md my-[2rem]  ">
+    <div className="lg:w-[50%] w-[100%]   lg:h-[520px] h-[860px] bg-white rounded-md my-[2rem]  ">
     <img className=' lg:w-[20%] w-[60%] lg:absolute absolute  lg:left-[30rem] left-[4rem] flex justify-center ' src={logo} alt="" />
-    <h1 className=' text-[2rem] text-center font-semibold lg:pt-[5rem] pt-[5rem]  '>Form 
-        <span className=' text-blue-500'> Registration</span></h1>
+    <h1 className=' text-[2rem] text-center font-semibold lg:pt-[5rem] pt-[5rem]  '>GALKA DIIWAAN 
+
+        <span className=' text-blue-500'> GELINTA</span></h1>
         
        <div className=" grid lg:block lg:mt-[1rem] mt-[2.5rem]  lg:space-y-4 space-y-2  lg:ml-0 justify-center lg:justify-normal ">
       
        
        <div className=" space-y-2 lg:space-y-0   lg:ml-[2.3rem] lg:flex flex-col lg:flex-row lg:items-center  lg:space-x-2">
 
-       <div className="">
-       <label className=' text-[1.1rem] font-semibold ' htmlFor="">Name</label><br />
+       <div className="space-y-3">
+       <label className=' text-[1.1rem] font-semibold ' htmlFor="">Magaca</label><br />
         <input className=' lg:w-[250px]  w-[300px] py-3 px-4 border-2 border-gray-200
          outline-none  ' type="text" 
          value={name} 
@@ -51,8 +52,8 @@ document.body.style.backgroundColor='#75E2E9'
           onChange={handleChange} />
        </div>
 
-       <div className="">
-       <label className=' text-[1.1rem] font-semibold ' htmlFor="">Number</label><br />
+       <div className="space-y-3">
+       <label className=' text-[1.1rem] font-semibold ' htmlFor="">TELEPHONE</label><br />
         <input className='lg:w-[250px]  w-[300px] py-3 px-4 border-2 border-gray-200
          outline-none  ' type="text" 
          value={number}
@@ -64,8 +65,8 @@ document.body.style.backgroundColor='#75E2E9'
 
         <div className=" space-y-2 lg:space-y-0 lg:ml-[2.3rem] lg:flex lg:items-center  lg:space-x-2">
 
-           <div className="">
-           <label className=' text-[1.1rem] font-semibold ' htmlFor="">City</label><br />
+           <div className="space-y-3">
+           <label className=' text-[1.1rem] font-semibold ' htmlFor="">Degan</label><br />
             <input className='lg:w-[250px]  w-[300px] py-3 px-4 border-2 border-gray-200
              outline-none  ' type="text" 
              value={city}
@@ -75,8 +76,9 @@ document.body.style.backgroundColor='#75E2E9'
                 
            </div>
 
-       <div className="ml-0">
-         <label className=' text-[1.1rem] font-semibold ' htmlFor=""> Education Stage </label><br />
+       <div className="space-y-3">
+         <label className=' text-[1.1rem] font-semibold ' htmlFor=""> Heerka wax barasho
+ </label><br />
          <select
           id="education"
           name="education"
@@ -88,6 +90,8 @@ document.body.style.backgroundColor='#75E2E9'
         >
           <option value="">Dooro Heerka Waxbarasho</option>
           <option value="Waxba">Waxba</option>
+          <option value="Dugsisare">DugsiHoose</option>
+          <option value="Dugsisare">DugsiDhexe</option>
           <option value="Dugsisare">Dugsisare</option>
           <option value="Jaamacad">Jaamacad</option>
           <option value="Master">Master</option>
@@ -99,17 +103,27 @@ document.body.style.backgroundColor='#75E2E9'
 
       <div className=" space-y-2 lg:space-y-0   lg:ml-[2.3rem] lg:flex items-center  lg:space-x-2">
 
-        <div className="">
-        <label className=' text-[1.1rem] font-semibold ' htmlFor="">Job</label><br />
-        <input className=' lg:w-[250px]  w-[300px] py-3 px-4 border-2 border-gray-200
-       outline-none  ' type="text" 
-       value={job}
-        placeholder='Soo Gali Darajada shaqadaada' 
-        name='job'
-         onChange={handleChange} />
+      
+        <div className=" space-y-3">
+        <label className=' text-[1.1rem] font-semibold  ' htmlFor="">Shaqo</label><br />
+        <select
+          // id="job"
+          name="job"
+          value={job}
+          onChange={handleChange}
+          required
+          className="appearance-nonerounded lg:w-[250px]  w-[300px] py-3 px-4 border-2 border-gray-200
+       outline-none  text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        >
+          <option value="">Mashaqeysaa</option>
+          <option value="Haa">Haa</option>
+          <option value="Maya">Maya</option>
+          
+       
+        </select>
         </div>
 
-   <div className="ml-0">
+   <div className="space-y-3">
      <label className=' text-[1.1rem] font-semibold ' htmlFor="">Bloodtype</label><br />
      <select
           id="bloodtype"
@@ -134,14 +148,14 @@ document.body.style.backgroundColor='#75E2E9'
      </div>
 
       
-        <div className=" space-y-3 lg:ml-[2.3rem]">
+        {/* <div className=" space-y-3 lg:ml-[2.3rem]">
         <label className=' text-[1.1rem] font-semibold ' htmlFor="">ID Card</label><br />
         <input className=' lg:w-[500px] w-[300px]  py-3 px-4 border-2 border-gray-200
          outline-none  ' type="text" 
          value={aqoonsi} 
          name='aqoonsi'
          placeholder='Soo Gali Aqoonsi Lambarka'  onChange={handleChange} />
-        </div>
+        </div> */}
         <button className=' py-2 px-5 bg-blue-500 text-white font-semibold
          text-[1.2rem] rounded-md lg:ml-[2.4rem]  ' onClick={Register}>Submit Form</button>
        </div>
